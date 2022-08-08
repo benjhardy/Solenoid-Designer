@@ -2,8 +2,8 @@
 ## Purpose:
 ### Gives the RF engineer complete control over every microsolenoid parameter, from temperature to sizing, in order to achieve the ideal microsolenoid for an MR microscopy experiment
 ### most of the content is worth based on these two manuscripts by Minard and Wind
-### https://doi.org/10.1002/1099-0534(2001)13:2<128::AID-CMR1002>3.0.CO;2-8 
-### https://doi.org/10.1002/cmr.1008
+### [Solenoidal microcoil design. Part I: Optimizing RF homogeneity and coil dimensions](https://doi.org/10.1002/1099-0534(2001)13:2<128::AID-CMR1002>3.0.CO;2-8) 
+### [Solenoidal microcoil design—Part II: Optimizing winding parameters for maximum signal-to-noise performance](https://doi.org/10.1002/cmr.1008)
 ## Contents:
 ### Coil Class with noise and signal considerations
     Arguments:
