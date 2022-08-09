@@ -7,7 +7,7 @@
 ## Contents:
 ### Coil Class with noise and signal considerations
     Arguments:
-    n - number of turns 
+    | n - number of turns 
     | dcoil - diameter of the coil (m) 
     | lcoil - length of coil (m) 
     | dwire - wire diameter (m) 
