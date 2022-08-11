@@ -93,7 +93,7 @@ class Coil:
 
     def RsampleMagnetic(self):
         d = self.dcoil
-        print(d)
+        #print(d)
         numerator = (pi*self.beta*self.sigma*(2*pi*self.f*self.u0*self.n*(self.alpha**2))**2)
         denom = (128*((d)**2 + (self.beta)**2))
         return (numerator/denom)
@@ -110,7 +110,7 @@ class Coil:
         tau = 8.27e-12
         epsPrime = einf + (e0 - einf)/(1+(w*tau)**2)
         epsDoublePrime = ((e0-einf)*w*tau)/(1+(w*tau)**2) + self.sigma/(w*enot)
-        print('26.85 epsDoublePrime = {}'.format(epsDoublePrime))
+        #print('26.85 epsDoublePrime = {}'.format(epsDoublePrime))
 
         eps = epsPrime - 1j*epsDoublePrime
 
@@ -118,12 +118,12 @@ class Coil:
 
         H = .1126*self.lcoil/self.dcoil + .08 + (.27/((self.lcoil/self.dcoil)**.5))
         Cstray = 100*H*self.dcoil * 1e-12 # change to Farads
-        print('Cstray = {}'.format(Cstray))
+        #print('Cstray = {}'.format(Cstray))
         Cprime = .5*Cstray
         C1 = Cprime*(1/(1-fd))
-        print('C1 = {}'.format(C1))
+        #print('C1 = {}'.format(C1))
         C2 = epsPrime*Cprime*(1/fd)
-        print('C2 = {}'.format(C2))
+        #print('C2 = {}'.format(C2))
         Rd = epsPrime/(w*C2*epsDoublePrime)
         Yreal = (Rd*(w*C1)**2)/(1+(((C1+C2)**2)*((w*Rd)**2)))
         Re = Yreal * Lcoil**2 * w**2
